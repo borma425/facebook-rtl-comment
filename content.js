@@ -9,10 +9,14 @@ document.querySelectorAll('[dir="auto"],[dir="ltr"]').forEach((Element) => {
 let arabic = /[\u0600-\u06FF]/,
 string = Element.textContent;
 
+
+setTimeout(function(){
+
 if(arabic.test(string)){
 Element.setAttribute("dir", "rtl");
 }
-
+  
+}, 500);//wait 0.5 seconds
 
 
 
