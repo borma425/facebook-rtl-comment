@@ -8,7 +8,9 @@
     "description": "Facebook RTL Comment",
     "version": "1.0",
 
-
+    "permissions": [
+      "activeTab"
+  ],
    "content_scripts": [
       {
        "matches": [
