@@ -9,13 +9,16 @@
     "version": "1.0",
 
     "permissions": [
-      "activeTab"
+      "tabs",
+      "activeTab",
+ "*://www.facebook.com/",
+ "*://www.facebook.com/*"
   ],
    "content_scripts": [
       {
        "matches": [
-         "https://*.facebook.com/",
-         "https://*.facebook.com/*"
+        "*://www.facebook.com/",
+  	    "*://www.facebook.com/*"
 
 
        ],
